@@ -1,0 +1,108 @@
+:root {
+  --bg: #0d1117;
+  --text: #e6edf3;
+  --accent: #58a6ff;
+  --muted: #8b949e;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: #161b22;
+  border-bottom: 1px solid #30363d;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.role {
+  font-size: 1.1rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.links a {
+  color: var(--accent);
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-weight: 500;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.section {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.section h2 {
+  border-left: 4px solid var(--accent);
+  padding-left: 10px;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.project {
+  background: #161b22;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 1px solid #30363d;
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills-list li {
+  background: #21262d;
+  border: 1px solid #30363d;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  border-top: 1px solid #30363d;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .skills-list {
+    justify-content: center;
+  }
+}
